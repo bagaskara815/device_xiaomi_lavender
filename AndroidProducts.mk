@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The Xiaomi-SDM660 Project
+# Copyright (C) 2020 The Xiaomi-SDM660 Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,11 +21,11 @@
 # definition file).
 #
 
-# Inherit Redmi Note 7 Carbon device config
+# Inherit Redmi Note 7 PixelExperience device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/carbon_lavender.mk
+    $(LOCAL_DIR)/aosp_lavender.mk
 
 COMMON_LUNCH_CHOICES := \
-    carbon_lavender-eng \
-    carbon_lavender-userdebug \
-    carbon_lavender-user
+    aosp_lavender-eng \
+    aosp_lavender-userdebug \
+    aosp_lavender-user
