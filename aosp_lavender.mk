@@ -37,6 +37,12 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 # Inherit some common PixelExperience stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Build Fingerprint
+PRODUCT_BUILD_PROP_OVERRIDES += \
+        TARGET_DEVICE="lavender" \
+        PRODUCT_NAME="lavender" \
+	PRIVATE_BUILD_DESC="lavender-user 9 PKQ1.180904.001 V10.3.9.0.PFGMIXM release-keys" 
+
 # Device identifier
 PRODUCT_NAME := aosp_lavender
 PRODUCT_MANUFACTURER := Xiaomi
@@ -48,11 +54,3 @@ PRODUCT_MODEL := Redmi Note 7
 TARGET_VENDOR_PRODUCT_NAME := lavender
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="lavender" \
-    TARGET_DEVICE="lavender" \
-    PRIVATE_BUILD_DESC="lavender-user 9 PKQ1.180904.001 V11.0.4.0.PFGMIXM release-keys"
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=google/coral/coral:10/QQ1B.200105.004/6031802:user/release-keys
