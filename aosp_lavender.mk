@@ -29,29 +29,27 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
-CUSTOM_BUILD_TYPE := OFFICIAL
+CUSTOM_BUILD_TYPE := RenaOEM
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_STOCK_ARCORE := true
 
-# Inherit some common PixelExperience stuff.
+# Inherit some common PixelROM stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Build Fingerprint
-PRODUCT_BUILD_PROP_OVERRIDES += \
-        TARGET_DEVICE="lavender" \
-        PRODUCT_NAME="lavender" \
-	PRIVATE_BUILD_DESC="lavender-user 9 PKQ1.180904.001 V10.3.9.0.PFGMIXM release-keys" 
-
-# Device identifier
 PRODUCT_NAME := aosp_lavender
-PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_PLATFORM := SDM660
 PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
+PRODUCT_MANUFACTURER := Xiaomi
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME="lavender" \
+    TARGET_DEVICE="lavender" \
+    PRIVATE_BUILD_DESC="sargo-user 10 QQ1A.200205.002 6084386 release-keys"
+
+BUILD_FINGERPRINT := "google/sargo/sargo:10/QQ1A.200205.002/6084386:user/release-keys"
 
 TARGET_VENDOR_PRODUCT_NAME := lavender
-
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
