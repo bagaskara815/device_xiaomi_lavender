@@ -47,9 +47,9 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="lavender" \
     TARGET_DEVICE="lavender" \
-    PRIVATE_BUILD_DESC="sargo-user 10 QQ1A.200205.002 6084386 release-keys"
+    PRIVATE_BUILD_DESC="coral-user 10 QQ1B.200205.002 6084386 release-keys"
 
-BUILD_FINGERPRINT := "google/sargo/sargo:10/QQ1A.200205.002/6084386:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:10/QQ1B.200205.002/6084386:user/release-keys"
 
 TARGET_VENDOR_PRODUCT_NAME := lavender
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
