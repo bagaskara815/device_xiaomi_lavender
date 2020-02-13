@@ -29,16 +29,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
-CUSTOM_BUILD_TYPE := RenaOEM
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_WIFI_EXT := true
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_STOCK_ARCORE := true
 
-# Inherit some common PixelROM stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common hentaiOS stuff.
+$(call inherit-product, vendor/hentai/config/common_telephony.mk)
 
-PRODUCT_NAME := aosp_lavender
+PRODUCT_NAME := hentai_lavender
 PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
