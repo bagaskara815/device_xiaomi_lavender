@@ -45,7 +45,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="lavender" \
     PRIVATE_BUILD_DESC="lavender-user 9 PKQ1.180904.001 V11.0.4.0.PFGMIXM release-keys"
 
-BUILD_FINGERPRINT := "google/crosshatch/crosshatch:10/QQ1A.200205.002/6084386:user/release-keys"
+BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.021/4565141:user/release-keys"
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
 TARGET_VENDOR_PRODUCT_NAME := lavender
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
