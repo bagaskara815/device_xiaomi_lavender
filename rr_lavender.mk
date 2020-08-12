@@ -32,9 +32,9 @@ $(call inherit-product, device/xiaomi/lavender/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit some common PixelROM stuff.
-$(call inherit-product, vendor/nitrogen/products/common.mk)
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
-PRODUCT_NAME := nitrogen_lavender
+PRODUCT_NAME := rr_lavender
 PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
@@ -52,3 +52,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 TARGET_VENDOR_PRODUCT_NAME := lavender
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+TARGET_FACE_UNLOCK_SUPPORTED := true

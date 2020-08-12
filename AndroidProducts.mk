@@ -23,9 +23,9 @@
 
 # Inherit Redmi Note 7 PixelExperience device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nitrogen_lavender.mk
+    $(LOCAL_DIR)/rr_lavender.mk
 
 COMMON_LUNCH_CHOICES := \
-    nitrogen_lavender-eng \
-    nitrogen_lavender-userdebug \
-    nitrogen_lavender-user
+    rr_lavender-eng \
+    rr_lavender-userdebug \
+    rr_lavender-user
