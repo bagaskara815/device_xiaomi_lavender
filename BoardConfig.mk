@@ -41,7 +41,7 @@ DEVICE_PATH := device/xiaomi/lavender
 TARGET_SCREEN_DENSITY := 420
 
 # DT2W
-TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
+TARGET_TAP_TO_WAKE_NODE := "/proc/tp_gesture"
 
 # Enable System As Root even for non-A/B from P onwards
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
