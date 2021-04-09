@@ -154,6 +154,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     DeviceDoze
 
+# Dirac
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.audio.soundfx.dirac=true \
+    persist.audio.dirac.speaker=true \
+    persist.dirac.acs.controller=qem \
+    persist.dirac.acs.ignore_error=1 \
+    persist.dirac.acs.storeSettings=1
+
 # Display
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \
