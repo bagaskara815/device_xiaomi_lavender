@@ -30,8 +30,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/nitrogen/products/common.mk)
+$(call inherit-product, vendor/aosp/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# FaceUnlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -40,7 +43,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="lavender-user 10 QKQ1.190910.002 V11.0.1.0.QFGMIXM release-keys" 
 
 # Device identifier
-PRODUCT_NAME := nitrogen_lavender
+PRODUCT_NAME := aosp_lavender
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PLATFORM := SDM660
 PRODUCT_DEVICE := lavender
