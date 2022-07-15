@@ -11,6 +11,9 @@ persist.dirac.acs.controller=qem
 persist.dirac.acs.ignore_error=1
 persist.dirac.acs.storeSettings=1
 
+# Display
+debug.sf.disable_client_composition_cache=1
+
 # Netflix
 ro.netflix.bsp_rev=Q660-13149-1
 
