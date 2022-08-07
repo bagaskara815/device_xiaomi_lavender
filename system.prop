@@ -4,11 +4,24 @@ vendor.bluetooth.soc=cherokee
 # CNE
 persist.vendor.cne.feature=1
 
+# DIRAC
+ro.audio.soundfx.dirac=true
+persist.audio.dirac.speaker=true
+persist.dirac.acs.controller=qem
+persist.dirac.acs.ignore_error=1
+persist.dirac.acs.storeSettings=1
+
 # Netflix
 ro.netflix.bsp_rev=Q660-13149-1
+
+# QTI
+ro.vendor.qti.sys.fw.bservice_enable=true
 
 # Radio
 DEVICE_PROVISIONED=1
 persist.sys.fflag.override.settings_network_and_internet_v2=true
 ril.subscription.types=NV,RUIM
 telephony.lteOnCdmaDevice=1
+
+# Zygote
+persist.device_config.runtime_native.usap_pool_enabled=true
