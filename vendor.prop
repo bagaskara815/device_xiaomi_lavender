@@ -105,6 +105,7 @@ dalvik.vm.heapminfree=512k
 dalvik.vm.heapmaxfree=8m
 
 # Display
+debug.hwui.skia_atrace_enabled=false
 debug.sf.hw=1
 debug.sf.latch_unsignaled=1
 debug.sf.enable_gl_backpressure=1
