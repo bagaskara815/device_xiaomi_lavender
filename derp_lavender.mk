@@ -12,14 +12,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from lavender device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common Evolution X stuff
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
-EVO_BUILD_TYPE := OFFICIAL
+# Inherit some common Derpfest stuff
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+USE_LEGACY_BOOTANIMATION := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_lavender
+PRODUCT_NAME := derp_lavender
 PRODUCT_DEVICE := lavender
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
